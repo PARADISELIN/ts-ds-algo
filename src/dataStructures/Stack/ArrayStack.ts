@@ -28,4 +28,16 @@ export default class ArrayStack<E> implements IStack<E> {
     }
     return this.array[this.array.length - 1] as E
   }
+
+  public print(): void {
+    let res = 'Stack: ['
+    for (let i = 0; i < this.getSize(); i++) {
+      res += this.array[i]
+      if (i !== this.getSize() - 1) {
+        res += ', '
+      }
+    }
+    res += '] top'
+    console.log(res)
+  }
 }
