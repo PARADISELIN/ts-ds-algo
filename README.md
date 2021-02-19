@@ -1,7 +1,7 @@
 # Typescript Data-Structure and Algorithm
 
-- Using Typescript to implement data structures and algorithms
-- Leetcode of each data structure
-- Jest to complete unit testing
-- Snowpack to develop projectså
+- 各种基础数据结构与算法的Typescript实现
+- 各种基础数据结构相关Leetcode习题的Typescript实现
+- 使用Jest完成单元测试
+- 使用Snowpack进项目开发与构建
 - ...
