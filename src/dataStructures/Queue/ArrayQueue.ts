@@ -31,7 +31,7 @@ export default class ArrayQueue<E> implements IQueue<E> {
 
   public print(): void {
     if (this.isEmpty()) {
-      console.log('Queue is Empty.')
+      console.log('Queue is empty.')
       return
     }
 
