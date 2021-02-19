@@ -6,6 +6,7 @@
     "format": "prettier --write \"src/**/*.{ts,js}\"",
     "lint": "prettier --check \"src/**/*.{ts,js}\""
   },
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
