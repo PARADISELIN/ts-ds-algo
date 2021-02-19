@@ -28,4 +28,22 @@ export default class ArrayQueue<E> implements IQueue<E> {
     }
     return this.array.shift() as E
   }
+
+  public print(): void {
+    if (this.isEmpty()) {
+      console.log('Queue is Empty.')
+      return
+    }
+
+    let res = 'Queue: front ['
+
+    for (let i = 0; i < this.getSize(); i++) {
+      res += this.array[i]
+      if (i !== this.getSize() - 1) {
+        res += ', '
+      }
+    }
+    res += '] tail'
+    console.log(res)
+  }
 }
