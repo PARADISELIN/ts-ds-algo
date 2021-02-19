@@ -30,6 +30,10 @@ export default class ArrayStack<E> implements IStack<E> {
   }
 
   public print(): void {
+    if (this.isEmpty()) {
+      console.log('Stack is empty.')
+      return
+    }
     let res = 'Stack: ['
     for (let i = 0; i < this.getSize(); i++) {
       res += this.array[i]
