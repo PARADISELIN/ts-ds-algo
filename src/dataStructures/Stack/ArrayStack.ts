@@ -1,4 +1,4 @@
-import { IStack } from './interface'
+import { IStack } from './types'
 
 export default class ArrayStack<E> implements IStack<E> {
   private array: E[] = []

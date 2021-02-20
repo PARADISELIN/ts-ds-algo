@@ -1,4 +1,4 @@
-import { IQueue } from './interface'
+import { IQueue } from './types'
 
 export default class ArrayQueue<E> implements IQueue<E> {
   private array: E[] = []
