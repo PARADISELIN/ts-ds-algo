@@ -1,6 +1,6 @@
-import { IQueue } from './types'
+import { Queue } from './types'
 
-export default class ArrayQueue<E> implements IQueue<E> {
+export default class ArrayQueue<E> implements Queue<E> {
   private array: E[] = []
 
   public getSize(): number {

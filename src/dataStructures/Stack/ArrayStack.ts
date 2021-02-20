@@ -1,6 +1,6 @@
-import { IStack } from './types'
+import { Stack } from './types'
 
-export default class ArrayStack<E> implements IStack<E> {
+export default class ArrayStack<E> implements Stack<E> {
   private array: E[] = []
 
   public getSize(): number {
