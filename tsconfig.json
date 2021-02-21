@@ -1,5 +1,6 @@
 {
   "include": ["src", "types"],
+  "exclude": ["node_modules", "**/leetcode/*"],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
@@ -16,7 +17,7 @@
     "allowSyntheticDefaultImports": true,
     // "importsNotUsedAsValues": "error",
     /* more strict checking for errors that per-file transpilers like `esbuild` would crash */
-    "isolatedModules": true,
+    "isolatedModules": false,
     /* noEmit - We only use TypeScript for type checking. */
     "noEmit": true,
     /* Additional Options */
