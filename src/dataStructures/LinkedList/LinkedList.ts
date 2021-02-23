@@ -95,7 +95,7 @@ export default class LinkedList<E> {
     return this.remove(this.size - 1)
   }
 
-  public print(): void {
+  public toString(): string {
     let res = `LinkedList: size = ${this.size}\n`
 
     let cur = this.dummyHead.next
@@ -104,6 +104,6 @@ export default class LinkedList<E> {
       cur = cur.next
     }
     res += 'NULL'
-    console.log(res)
+    return res
   }
 }
