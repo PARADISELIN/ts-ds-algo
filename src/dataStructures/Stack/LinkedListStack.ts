@@ -27,4 +27,13 @@ export default class LinkedListStack<E> implements Stack<E> {
   public peek(): E | null {
     return this.linkedList.getFirst()
   }
+
+  public toString(): string {
+    if (this.isEmpty()) {
+      return 'Stack is empty.'
+    }
+    let res = `Stack: size = ${this.getSize()}\n`
+    res += `top ${this.linkedList.toString()}`
+    return res
+  }
 }
