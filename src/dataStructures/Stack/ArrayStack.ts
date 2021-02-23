@@ -29,11 +29,11 @@ export default class ArrayStack<E> implements Stack<E> {
     return this.array[this.array.length - 1] as E
   }
 
-  public print(): void {
+  public toString(): string {
     if (this.isEmpty()) {
-      console.log('Stack is empty.')
-      return
+      return 'Stack is empty.'
     }
+
     let res = 'Stack: ['
     for (let i = 0; i < this.getSize(); i++) {
       res += this.array[i]
@@ -42,6 +42,6 @@ export default class ArrayStack<E> implements Stack<E> {
       }
     }
     res += '] top'
-    console.log(res)
+    return res
   }
 }

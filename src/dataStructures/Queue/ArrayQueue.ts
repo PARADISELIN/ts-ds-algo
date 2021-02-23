@@ -29,10 +29,9 @@ export default class ArrayQueue<E> implements Queue<E> {
     return this.array.shift() as E
   }
 
-  public print(): void {
+  public toString(): string {
     if (this.isEmpty()) {
-      console.log('Queue is empty.')
-      return
+      return 'Queue is empty.'
     }
 
     let res = 'Queue: front ['
@@ -44,6 +43,6 @@ export default class ArrayQueue<E> implements Queue<E> {
       }
     }
     res += '] tail'
-    console.log(res)
+    return res
   }
 }

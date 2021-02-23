@@ -73,7 +73,10 @@ export default class LoopQueue<E> implements Queue<E> {
     return ret
   }
 
-  public print(): void {
+  public toString(): string {
+    if (this.isEmpty()) {
+      return 'Queue is empty.'
+    }
     let res = `LoopQueue: size = ${this.getSize()}, capacity = ${this.getCapacity()}\n`
     res += 'front ['
     for (let i = this.front; i !== this.tail; i = (i + 1) % this.data.length) {
@@ -83,6 +86,6 @@ export default class LoopQueue<E> implements Queue<E> {
       }
     }
     res += '] tail'
-    console.log(res)
+    return res
   }
 }
