@@ -96,7 +96,7 @@ export default class LinkedList<E> {
   }
 
   public toString(): string {
-    let res = `LinkedList: size = ${this.size}\n`
+    let res = ''
 
     let cur = this.dummyHead.next
     while (cur != null) {
