@@ -1,6 +1,6 @@
 {
   "include": ["src", "types"],
-  "exclude": ["node_modules", "**/leetcode/*"],
+  "exclude": ["node_modules", "src/**/leetcode/*"],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
