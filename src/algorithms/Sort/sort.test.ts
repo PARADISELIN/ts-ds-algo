@@ -1,6 +1,7 @@
 import selectionSort from './selectionSort'
 import insertionSort from './insertionSort'
 import { generatorRandomArray, isSorted } from '../helper'
+import mergeSort from './mergeSort'
 
 describe('test various sorting algorithms', () => {
   let len: number
@@ -22,6 +23,12 @@ describe('test various sorting algorithms', () => {
   it('test insertion sort algorithm', () => {
     expect(isSorted(arr)).toBeFalsy()
     insertionSort(arr)
+    expect(isSorted(arr)).toBeTruthy()
+  })
+
+  it('test merge sort algorithm', () => {
+    expect(isSorted(arr)).toBeFalsy()
+    mergeSort(arr)
     expect(isSorted(arr)).toBeTruthy()
   })
 })
