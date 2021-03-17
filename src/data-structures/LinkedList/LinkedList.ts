@@ -95,6 +95,24 @@ export default class LinkedList<E> {
     return this.remove(this.size - 1)
   }
 
+  public removeElement(e: E): void {
+    let prev = this.dummyHead
+
+    while (prev.next != null) {
+      if (prev.next.e === e) {
+        break
+      }
+      prev = prev.next
+    }
+
+    if (prev.next != null) {
+      const delNode = prev.next
+      prev.next = delNode.next
+      delNode.next = null
+      this.size--
+    }
+  }
+
   public toString(): string {
     let res = ''
 
