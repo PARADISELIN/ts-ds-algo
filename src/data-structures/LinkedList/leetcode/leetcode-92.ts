@@ -12,13 +12,12 @@ function reverseBetween(
 
   let prev = dummyHead
   for (let i = 0; i < left - 1; i++) {
-    prev = prev.next
+    prev = prev.next as ListNode
   }
-  let cur = prev.next
-  let next: ListNode | null
 
+  let cur = prev.next as ListNode
   for (let i = 0; i < right - left; i++) {
-    next = cur.next
+    const next = cur.next as ListNode
     cur.next = next.next
     next.next = prev.next
     prev.next = next
